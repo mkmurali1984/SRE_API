@@ -3,6 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace SRE_API.Models
 {
+    [BsonIgnoreExtraElements]
     public class PropertiesModel
     {
 

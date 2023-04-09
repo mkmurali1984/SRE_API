@@ -20,9 +20,9 @@ namespace SRE_API.Services
             return await propertiesCollection.Find(_ => true).ToListAsync();
         }
 
-        public async Task InsertPropertiesDetails(PropertiesModel foods)
+        public async Task InsertPropertiesDetails(PropertiesModel propertiesModel)
         {
-            await propertiesCollection.InsertOneAsync(foods);
+            await propertiesCollection.InsertOneAsync(propertiesModel);
         }
     }
 }
