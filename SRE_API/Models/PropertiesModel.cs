@@ -17,5 +17,9 @@ namespace SRE_API.Models
 
         public string Issue { get; set; } = null!;
 
+        public string Extra { get; set; } = null!;
+
+        public string Location { get; set; } = null!;
+
     }
 }
