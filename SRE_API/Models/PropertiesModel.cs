@@ -11,15 +11,29 @@ namespace SRE_API.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
-        public string Type { get; set; } = null!;
+        public string PersonName { get; set; } = null!;
 
-        public string Size { get; set; } = null!;
+        public string OwnershipType { get; set; } 
 
-        public string Issue { get; set; } = null!;
+        public string PersonAddress { get; set; } 
 
-        public string Extra { get; set; } = null!;
+        public string ContactNumber { get; set; } 
 
-        public string Location { get; set; } = null!;
+        public string? EmailAddress { get; set; } 
+
+        public string Purpose { get; set; } 
+
+        public string PropertyType { get; set; }
+
+        public string PropertySubtype { get; set; } 
+
+        public string? Price { get; set; }
+
+        public string? PropertyDescription { get; set; } 
+
+        public string? MapURL { get; set; } 
+
+        public string? ImageFileName { get; set; } 
 
     }
 }

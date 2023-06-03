@@ -24,7 +24,7 @@ namespace SRE_API.Controllers
         }
 
         [HttpPost]
-        public async Task<OkObjectResult> Insert(PropertiesModel propertiesModel)
+        public async Task<OkObjectResult> Insert([FromBody]PropertiesModel propertiesModel)
         {
             await propertiesServices.InsertPropertiesDetails(propertiesModel);
             return Ok(propertiesModel);
