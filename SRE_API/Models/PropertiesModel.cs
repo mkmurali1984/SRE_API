@@ -21,15 +21,17 @@ namespace SRE_API.Models
 
         public string? EmailAddress { get; set; } 
 
-        public string Purpose { get; set; } 
+        public string Purpose { get; set; }
 
-        public string PropertyType { get; set; }
+        public string PropertyType { get; set; } = null!;
 
-        public string PropertySubtype { get; set; } 
+        public string PropertySubtype { get; set; } = null!;
 
         public string? Price { get; set; }
 
         public string? PropertyDescription { get; set; } 
+
+        public string? dimensions { get; set; }
 
         public string? MapURL { get; set; } 
 
