@@ -54,5 +54,17 @@ namespace SRE_API.Controllers
                 return new JsonResult("anonymous.png");
             }
         }
+
+        [HttpPut]
+        public void UpdateProperties(string id, PropertiesModel propertiesModel)
+        {
+            var isPropertiesFound = propertiesServices.GetPropertyById(id);
+
+            if (isPropertiesFound != null)
+            {
+                propertiesModel.Id = isPropertiesFound.Id;
+                propertiesServices.updateProperties(id, propertiesModel);
+            }
+        }
     }
 }

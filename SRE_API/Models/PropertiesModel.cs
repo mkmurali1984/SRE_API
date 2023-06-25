@@ -35,7 +35,11 @@ namespace SRE_API.Models
 
         public string? MapURL { get; set; } 
 
-        public string? ImageFileName { get; set; } 
+        public string? ImageFileName { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public bool IsApproved { get; set; }
 
     }
 }
